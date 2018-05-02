@@ -1,39 +1,40 @@
-AplicaÁ„o .ASP
+Aplica√ß√£o .ASP
 
-Na p·gina inicial da aplicaÁ„o ASP.NET o cliente ir· se deparar com uma loja dos produtos base. Esses produtos base podem ser selecionados como base para criaÁ„o de outros produtos personalizados. No centro da tela, quadrados mostraram imagens de teclados e seus respectivos preÁos. Em cada quadrado existiram dois botıes: um para comprar o produto, e outro para customiz·-lo. Ao clicar no bot„o ìcomprarî, o cliente ser· levado a uma tela de pagamento com o cadastro das informaÁıes necess·rias. ApÛs preencher corretamente os dados produto ser· liberado para entrega.
-Caso o cliente clique em customizar, ele ser· levado a uma p·gina de demonstraÁ„o do software (aplicaÁ„o c#) que È utilizada para customizaÁ„o dos produtos, juntamente a um bot„o que efetuar· o download da aplicaÁ„o (tambÈm poder· ser possÌvel acess·-la pelo menu).
-Em todas as p·ginas da aplicaÁ„o web, haver· um bot„o de cadastro/login onde o usu·rio poder· se cadastrar ou logar em sua conta liberando o acesso a compra de produtos. 
-Haver· tambÈm a ·rea do ìfale conoscoî, onde o cliente poder· tirar d˙vidas e ter· o endereÁo da loja fÌsica assim como as redes sociais para contato.
+Na p√°gina inicial da aplica√ß√£o ASP.NET o cliente ir√° se deparar com uma loja dos produtos base. Esses produtos base podem ser selecionados como base para cria√ß√£o de outros produtos personalizados. No centro da tela, quadrados mostraram imagens de teclados e seus respectivos pre√ßos. Em cada quadrado existiram dois bot√µes: um para comprar o produto, e outro para customiz√°-lo. Ao clicar no bot√£o ‚Äúcomprar‚Äù, o cliente ser√° levado a uma tela de pagamento com o cadastro das informa√ß√µes necess√°rias. Ap√≥s preencher corretamente os dados produto ser√° liberado para entrega.
+Caso o cliente clique em customizar, ele ser√° levado a uma p√°gina de demonstra√ß√£o do software (aplica√ß√£o c#) que √© utilizada para customiza√ß√£o dos produtos, juntamente a um bot√£o que efetuar√° o download da aplica√ß√£o (tamb√©m poder√° ser poss√≠vel acess√°-la pelo menu).
+Em todas as p√°ginas da aplica√ß√£o web, haver√° um bot√£o de cadastro/login onde o usu√°rio poder√° se cadastrar ou logar em sua conta liberando o acesso a compra de produtos. 
+Haver√° tamb√©m a √°rea do ‚Äúfale conosco‚Äù, onde o cliente poder√° tirar d√∫vidas e ter√° o endere√ßo da loja f√≠sica assim como as redes sociais para contato.
 
-AplicaÁ„o C#
-Na interface, o cliente se deparar· com uma interface amig·vel. No canto da tela, h· um menu, com informaÁıes da conta. Navegando pela aplicaÁ„o, ser· possÌvel customizar os teclados: mudar as cores de determinados botıes, mudar as fontes dos botıes (designs prÈ-hdefinidos), mudar fonte das teclas, mudar cor do teclado, customizaÁ„o do formato das bordas do teclado (arredondado, reto, pontudo), material (a troca do material limita algumas funÁıes, como, por exemplo, a cor); escolher se o teclado ser· ter· iluminaÁ„o em cada uma das teclas e a cor individual de cada uma delas, mec‚nico ou membrana e o tipo de switch. Depois, a equipe de an·lise o julgar· para ver se È possÌvel ou n„o de ser projetado.
-Ter· uma tela com a divis„o entre os diferentes tipos de personalizaÁ„o para que o usu·rio n„o se confunda.
+Aplica√ß√£o C#
+Na interface, o cliente se deparar√° com uma interface amig√°vel. No canto da tela, h√° um menu, com informa√ß√µes da conta. Navegando pela aplica√ß√£o, ser√° poss√≠vel customizar os teclados: mudar as cores de determinados bot√µes, mudar as fontes dos bot√µes (designs pr√©-hdefinidos), mudar fonte das teclas, mudar cor do teclado, customiza√ß√£o do formato das bordas do teclado (arredondado, reto, pontudo), material (a troca do material limita algumas fun√ß√µes, como, por exemplo, a cor); escolher se o teclado ser√° ter√° ilumina√ß√£o em cada uma das teclas e a cor individual de cada uma delas, mec√¢nico ou membrana e o tipo de switch. Depois, a equipe de an√°lise o julgar√° para ver se √© poss√≠vel ou n√£o de ser projetado.
+Ter√° uma tela com a divis√£o entre os diferentes tipos de personaliza√ß√£o para que o usu√°rio n√£o se confunda.
 
-AplicaÁ„o Java
+Aplica√ß√£o Java
 
-2 nÌveis de acesso: Funcion·rio e Gerente Geral 
-O sistema funciona assim: o cliente, pela AplicaÁ„o C#, faz a customizaÁ„o do produto que quer comprar, e, depois de pronto, o requerimento do pedido vai para o funcion·rio, que È um analista que validar· cada projeto feito por cada cliente. Ao validar, este projeto ent„o È mandado para o gerente.
-Funcion·rio: 
-?	Analisa os projetos;
-?	Valida os projetos;
-?	S„o divididos por perifÈricos;
-?	Conversa com os clientes para falar o porquÍ que n„o foi aceito tal Projeto.
+2 n√≠veis de acesso: Funcion√°rio e Gerente Geral 
+O sistema funciona assim: o cliente, pela Aplica√ß√£o C#, faz a customiza√ß√£o do produto que quer comprar, e, depois de pronto, o requerimento do pedido vai para o funcion√°rio, que √© um analista que validar√° cada projeto feito por cada cliente. Ao validar, este projeto ent√£o √© mandado para o gerente.
+
+Funcion√°rio: 
+-	Analisa os projetos;
+-	Valida os projetos;
+-	S√£o divididos por perif√©ricos;
+-	Conversa com os clientes para falar o porqu√™ que n√£o foi aceito tal Projeto.
 
 Gerente:
-?	Recebe os projetos validados pelos funcion·rios;
-?	Atualiza as informaÁıes das peÁas j· produzidas e quais j· foram enviadas;
-?	Pode ver o que os funcion·rios est„o fazendo.
-?	Recebe as informaÁıes gerais de produÁ„o. Ex.: quais peÁas est„o sendo feitas, quais est„o prontas, quais est„o sendo enviadas para os clientes, assim como o gerente parcial;
-?	VÍ as estatÌsticas de produÁ„o. Ex.: quais as customizaÁıes mais pedidas, de qual regi„o vem os pedidos (gr·fico), etc.
-?	Atualiza as informaÁıes do site e da aplicaÁ„o C#. Ex.: Conforme as estatÌsticas, coloca-se mais ìpresetsî no site e na aplicaÁ„o C#.
+-	Recebe os projetos validados pelos funcion√°rios;
+-	Atualiza as informa√ß√µes das pe√ßas j√° produzidas e quais j√° foram enviadas;
+-	Pode ver o que os funcion√°rios est√£o fazendo.
+-	Recebe as informa√ß√µes gerais de produ√ß√£o. Ex.: quais pe√ßas est√£o sendo feitas, quais est√£o prontas, quais est√£o sendo enviadas para os   clientes, assim como o gerente parcial;
+-	V√™ as estat√≠sticas de produ√ß√£o. Ex.: quais as customiza√ß√µes mais pedidas, de qual regi√£o vem os pedidos (gr√°fico), etc.
+-	Atualiza as informa√ß√µes do site e da aplica√ß√£o C#. Ex.: Conforme as estat√≠sticas, coloca-se mais ‚Äúpresets‚Äù no site e na aplica√ß√£o C#.
 
 
-AplicaÁ„o Mobile (Android)
+Aplica√ß√£o Mobile (Android)
 
-Essa aplicaÁ„o servir· como uma rede social com recursos limitados. O foco È exibir customizaÁıes de outras pessoas para inspiraÁ„o. Ao abrir o app o usu·rio ter· de fazer o login e assim ver· publicaÁıes de outros usu·rios e podendo tambÈm realizar suas prÛprias publicaÁıes das suas customizaÁıes feitas na aplicaÁ„o C#.
+Essa aplica√ß√£o servir√° como uma rede social com recursos limitados. O foco √© exibir customiza√ß√µes de outras pessoas para inspira√ß√£o. Ao abrir o app o usu√°rio ter√° de fazer o login e assim ver√° publica√ß√µes de outros usu√°rios e podendo tamb√©m realizar suas pr√≥prias publica√ß√µes das suas customiza√ß√µes feitas na aplica√ß√£o C#.
 
 
 Parte financeira (Lucro)
-Quando o cliente ir· pagar?
-1. Caso queira enviar o produto para an·lise (x% do produto total);
+Quando o cliente ir√° pagar?
+1. Caso queira enviar o produto para an√°lise (x% do produto total);
 2. Caso queira aumentar o tamanho de sua galeria (taxa fixa);
