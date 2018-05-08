@@ -1,12 +1,15 @@
 # Dia 01 - 23/04
 ## ASP
-- Começar a masterpage
-- Começar página de login
-
-Versão do ASP 0.1
-
+- Começar a masterpage;
+- Começar página de login;
+---
 # Dia 02 - 27/04
--Aprender a usar o Git
+## Reunião
+- Aprender a usar o Git;
+---
+# Dia 03 - 07/05
+## ASP
+- Continuação do site;
 
 
 
