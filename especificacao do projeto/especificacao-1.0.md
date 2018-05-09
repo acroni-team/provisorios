@@ -39,10 +39,9 @@ Quando o cliente irá pagar?
 1. Caso queira enviar o produto para análise (x% do produto total);
 2. Caso queira aumentar o tamanho de sua galeria (taxa fixa);
 
-
-Felipi Yuri Santos - C#
-Filipe Figueira - Design
-Gabriel Braga - C#
-Guilherme Mota - c# e Banco
-Gustavo Palma - ASP
-Gustavo Pereira - ASP
+- Felipi Yuri Santos - C#
+- Filipe Figueira - Design
+- Gabriel Braga - C#
+- Guilherme Mota - c# e Banco
+- Gustavo Palma - ASP
+- Gustavo Pereira - ASP
