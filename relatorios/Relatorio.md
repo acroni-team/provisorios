@@ -16,5 +16,10 @@
 
 # Dia 04 - 11/05
 ### Reunião
-- Continuamos os layouts;
+- Continuação os layouts;
+
+# Dia 05 - 15/05
+### ASP e Questionário
+- Site em progresso;
+- Formulação do questionário quantiqualitativo;
 
