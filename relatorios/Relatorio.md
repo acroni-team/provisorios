@@ -16,10 +16,17 @@
 
 # Dia 04 - 11/05
 ### Reunião
-- Continuação os layouts;
+- Continuação dos layouts;
 
 # Dia 05 - 15/05
 ### ASP e Questionário
 - Site em progresso;
 - Formulação do questionário quantiqualitativo;
 
+# Dia 06 - 21/05
+### ASP
+- Site em progresso para entrega no dia 28/05;
+
+# Dia 07 - 25/05
+### Reunião 
+- Reformulação do questionário;
