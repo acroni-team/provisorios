@@ -29,4 +29,4 @@
 
 # Dia 07 - 25/05
 ### Reunião 
-- Reformulação do questionário;
+- Criação do canvas;
