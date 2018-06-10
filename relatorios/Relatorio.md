@@ -30,3 +30,7 @@
 # Dia 07 - 25/05
 ### Reunião 
 - Criação do canvas;
+
+# Dia 08 - 09/06
+### Reunião 
+- Correção do questionário quantiqualitativo;
