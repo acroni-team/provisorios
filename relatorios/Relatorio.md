@@ -34,3 +34,9 @@
 # Dia 08 - 09/06
 ### Reunião 
 - Correção do questionário quantiqualitativo;
+
+# Dia 09 - 15/06
+### Reunião 
+- Análise SWOT a.k.a FOFA ◑ω◐;
+- 1F: Forças, 2F: Fraquezas;
+- Edição do questionário;
