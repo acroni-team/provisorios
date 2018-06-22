@@ -40,3 +40,9 @@
 - Análise SWOT a.k.a FOFA ◑ω◐;
 - 1F: Forças, 2F: Fraquezas;
 - Edição do questionário;
+
+# Dia 10 - 21/06
+### Pseudoreunião
+- Preparo da apresentação do dia 26/06;
+- Análise e interpretação dos gráficos;
+
