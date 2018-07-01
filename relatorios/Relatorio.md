@@ -46,3 +46,6 @@
 - Preparo da apresentação do dia 26/06;
 - Análise e interpretação dos gráficos;
 
+# Dia 11 - 01/07
+### Reunião 
+- Criação do diagrama da uml C#
