@@ -48,4 +48,9 @@
 
 # Dia 11 - 01/07
 ### Reunião 
-- Criação do diagrama da uml C#
+- Criação do diagrama UML C#;
+
+# Dia 12 - 03/07
+### Pseudoreunião 
+- Colorpicker C#;
+- Login e cadastro do website funcionando;
