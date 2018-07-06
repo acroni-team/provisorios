@@ -28,7 +28,7 @@
 - Site em progresso para entrega no dia 28/05;
 
 # Dia 07 - 25/05
-### Reunião 
+### Reunião nota 10
 - Criação do canvas;
 
 # Dia 08 - 09/06
@@ -54,3 +54,7 @@
 ### Pseudoreunião 
 - Colorpicker C#;
 - Login e cadastro do website funcionando;
+
+# Dia 13 - 06/07
+### Renião nota 10
+- Apresentação e desenvolvimento do protocolo de registro de arquivos;
