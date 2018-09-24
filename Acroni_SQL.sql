@@ -32,18 +32,32 @@ create table tblProdutosDaLoja
 	preco decimal(6,2),
 )
 GO
+create table tblColecao(
+	nick_colecao varchar(30) primary key,
+	imagem_colecao varbinary(max),
+	id_cliente int foreign key references tblCliente(id)
+)
+GO
 create table tblTecladoCustomizado(
 	id int primary key identity(1,1),
 	id_cliente int foreign key references tblCliente(id),
 	nickname varchar(50),
 	preco decimal(6,2),
-
+	nick_colecao varchar(30) foreign key references tblColecao
 )
+GO
 create table tblPedidosTecladoCustomizado
 (
 	id_tecladoCustomizado int foreign key references tblTecladoCustomizado(id),
 	imagem VARBINARY(MAX),
 )
+
+SELECT * FROM tblCliente
+SELECT * FROM tblPedidosTecladoCustomizado
+SELECT * FROM tblProdutosDaLoja
+SELECT * FROM tblTecladoCustomizado
+SELECT * FROM tblColecao
+
 
 -- Inserts:
 -- Produtos
