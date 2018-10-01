@@ -1,6 +1,5 @@
 use master
 go
-
 IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = 'ACRONI_SQL')
 	DROP DATABASE ACRONI_SQL
 
@@ -8,8 +7,9 @@ CREATE DATABASE ACRONI_SQL
 GO
 USE ACRONI_SQL
 GO
-CREATE TABLE tblCliente (
-	id int primary key identity(1,1),
+CREATE TABLE tblCliente 
+(
+	id_cliente INT PRIMARY KEY IDENTITY(1,1),
 	nome VARCHAR(30),
 	usuario VARCHAR(30),
 	senha VARCHAR(30),
@@ -17,53 +17,56 @@ CREATE TABLE tblCliente (
 	imagem VARBINARY(MAX),
 	cpf VARCHAR(15),
 	cep VARCHAR(15),
-	arquivo_cliente varbinary(max)
+	imagem_cliente VARBINARY(max)
 )
 GO
-create table tblMarca(
-	id int primary key identity(1,1),
-	nome varchar(20)	
-)
-GO
-create table tblProdutosDaLoja
+CREATE TABLE tblPedidosProdutosDaLoja
 (
-	id int primary key identity(1,1),
-	nome varchar(50),
-	descricao varchar(80),
-	id_marca int foreign key references tblMarca(id),
-	peso decimal(6,2),
-	altura decimal(6,2),
-	largura decimal(6,2),
-	comprimento decimal(6,2),
-	preco decimal(6,2),
+	id_cliente INT FOREIGN KEY REFERENCES tblCliente(id_cliente),
+	id_produto INT FOREIGN KEY REFERENCES tblProdutosDaLoja(id_produto),
+	preco_total DECIMAL(6,2),
+	quantidade_pedida INT
 )
 GO
-create table tblColecao(	
-	id int primary key identity(1,1),
-	nick_colecao varchar(30),
-	imagem_colecao varbinary(max),
-	id_cliente int foreign key references tblCliente(id)
-)
-GO
-create table tblTecladoCustomizado(
-	id int primary key identity(1,1),
-	id_cliente int foreign key references tblCliente(id),
-	nickname varchar(20),
-	preco decimal(6,2),
-	id_colecao int foreign key references tblColecao(id)
-)
-GO
-create table tblPedidosTecladoCustomizado
+CREATE TABLE tblProdutosDaLoja
 (
-	id_tecladoCustomizado int foreign key references tblTecladoCustomizado(id),
+	id_produto INT PRIMARY KEY IDENTITY(1,1),
+	nome VARCHAR(50),
+	descricao VARCHAR(80),
+	peso DECIMAL(6,2),
+	altura DECIMAL(6,2),
+	largura DECIMAL(6,2),
+	comprimento DECIMAL(6,2),
+	preco DECIMAL(6,2),
+)
+GO
+CREATE TABLE tblTecladoCustomizado
+(
+	id_teclado_customizado INT PRIMARY KEY IDENTITY(1,1),
+	id_colecao INT FOREIGN KEY REFERENCES tblColecao(id_colecao),
+	id_cliente INT FOREIGN KEY REFERENCES tblCliente(id_cliente),
+	nickname VARCHAR(20),
+	preco DECIMAL(6,2),
+)
+GO
+CREATE TABLE tblColecao
+(	
+	id_colecao INT PRIMARY KEY IDENTITY(1,1),
+	nick_colecao VARCHAR(30),
+	imagem_colecao VARBINARY(max)
+)
+GO
+CREATE TABLE tblPedidosTecladoCustomizado
+(
+	id_tecladoCustomizado INT FOREIGN KEY REFERENCES tblTecladoCustomizado(id_teclado_customizado),
 	imagem VARBINARY(MAX),
 )
 
-SELECT * FROM tblCliente
-SELECT * FROM tblPedidosTecladoCustomizado
-SELECT * FROM tblProdutosDaLoja
-SELECT * FROM tblTecladoCustomizado
-SELECT * FROM tblColecao
+--SELECT * FROM tblCliente
+--SELECT * FROM tblPedidosTecladoCustomizado
+--SELECT * FROM tblProdutosDaLoja
+--SELECT * FROM tblTecladoCustomizado
+--SELECT * FROM tblColecao
 
 
 -- Inserts:
@@ -74,6 +77,3 @@ SELECT * FROM tblColecao
 --insert into tblProdutos values('OI MOUTA','Aquele que escreveu Mouta como nome na lista','bem leite eunsei kkj',420)
 --insert into tblProdutos values('AGORA SIM','Famoso Rodrigao da Massa','fritas francesas JOBS Gabriel TORRES',50)
 --insert into tblProdutos values('OI, eu sou um tecladinho bunitinho :D','digo, PERFECTUS','PERFEITINHOS PALHACTUOPLANCTUM JOTA É PALHATROLITICO ',999)
-
----- Cliente:
---INSERT tblCliente(nome_usuario, senha, email, cpf) VALUES ('felipi', 'facil', 'papel@log.com','518.998.930-59') 
