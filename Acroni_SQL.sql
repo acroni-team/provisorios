@@ -20,14 +20,6 @@ CREATE TABLE tblCliente
 	imagem_cliente VARBINARY(max)
 )
 GO
-CREATE TABLE tblPedidosProdutosDaLoja
-(
-	id_cliente INT FOREIGN KEY REFERENCES tblCliente(id_cliente),
-	id_produto INT FOREIGN KEY REFERENCES tblProdutosDaLoja(id_produto),
-	preco_total DECIMAL(6,2),
-	quantidade_pedida INT
-)
-GO
 CREATE TABLE tblProdutosDaLoja
 (
 	id_produto INT PRIMARY KEY IDENTITY(1,1),
@@ -40,13 +32,12 @@ CREATE TABLE tblProdutosDaLoja
 	preco DECIMAL(6,2),
 )
 GO
-CREATE TABLE tblTecladoCustomizado
+CREATE TABLE tblPedidosProdutosDaLoja
 (
-	id_teclado_customizado INT PRIMARY KEY IDENTITY(1,1),
-	id_colecao INT FOREIGN KEY REFERENCES tblColecao(id_colecao),
 	id_cliente INT FOREIGN KEY REFERENCES tblCliente(id_cliente),
-	nickname VARCHAR(20),
-	preco DECIMAL(6,2),
+	id_produto INT FOREIGN KEY REFERENCES tblProdutosDaLoja(id_produto),
+	preco_total DECIMAL(6,2),
+	quantidade_pedida INT
 )
 GO
 CREATE TABLE tblColecao
@@ -56,17 +47,26 @@ CREATE TABLE tblColecao
 	imagem_colecao VARBINARY(max)
 )
 GO
+CREATE TABLE tblTecladoCustomizado
+(
+	id_teclado_customizado INT PRIMARY KEY IDENTITY(1,1),
+	id_colecao INT FOREIGN KEY REFERENCES tblColecao(id_colecao),
+	id_cliente INT FOREIGN KEY REFERENCES tblCliente(id_cliente),
+	nickname VARCHAR(20),
+	preco DECIMAL(6,2),
+)
+GO
 CREATE TABLE tblPedidosTecladoCustomizado
 (
 	id_tecladoCustomizado INT FOREIGN KEY REFERENCES tblTecladoCustomizado(id_teclado_customizado),
 	imagem VARBINARY(MAX),
 )
 
---SELECT * FROM tblCliente
---SELECT * FROM tblPedidosTecladoCustomizado
---SELECT * FROM tblProdutosDaLoja
---SELECT * FROM tblTecladoCustomizado
---SELECT * FROM tblColecao
+SELECT * FROM tblCliente
+SELECT * FROM tblPedidosTecladoCustomizado
+SELECT * FROM tblProdutosDaLoja
+SELECT * FROM tblTecladoCustomizado
+SELECT * FROM tblColecao
 
 
 -- Inserts:
