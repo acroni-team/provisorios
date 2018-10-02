@@ -14,10 +14,9 @@ CREATE TABLE tblCliente
 	usuario VARCHAR(30),
 	senha VARCHAR(30),
 	email VARCHAR(50),
-	imagem VARBINARY(MAX),
+	imagem_cliente VARBINARY(MAX),
 	cpf VARCHAR(15),
-	cep VARCHAR(15),
-	imagem_cliente VARBINARY(max)
+	cep VARCHAR(15)
 )
 GO
 CREATE TABLE tblProdutosDaLoja
