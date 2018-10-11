@@ -42,6 +42,7 @@ GO
 CREATE TABLE tblColecao
 (	
 	id_colecao INT PRIMARY KEY IDENTITY(1,1),
+	id_cliente INT FOREIGN KEY REFERENCES tblCliente(id_cliente),
 	nick_colecao VARCHAR(30),
 	imagem_colecao VARBINARY(max)
 )
@@ -70,9 +71,9 @@ SELECT * FROM tblColecao
 
 -- Inserts:
 -- Produtos
---insert into tblProdutos values('Rubens','ele é um RUBANCO bem LOCO','bem loco impolganti leite pao de batata',69.89)
+--insert into tblProdutos values('Rubens','ele Ã© um RUBANCO bem LOCO','bem loco impolganti leite pao de batata',69.89)
 --insert into tblProdutos values('FRUIT  DOLLY','Bebida de nectar',' DOLLY',56.30,1.98,3.56,5.97,69.89)
 --insert into tblProdutos values('TETRAEDRO KRL','VOCE N SABE NEM EU','bem loco impolganti irineu',727)
 --insert into tblProdutos values('OI MOUTA','Aquele que escreveu Mouta como nome na lista','bem leite eunsei kkj',420)
 --insert into tblProdutos values('AGORA SIM','Famoso Rodrigao da Massa','fritas francesas JOBS Gabriel TORRES',50)
---insert into tblProdutos values('OI, eu sou um tecladinho bunitinho :D','digo, PERFECTUS','PERFEITINHOS PALHACTUOPLANCTUM JOTA É PALHATROLITICO ',999)
+--insert into tblProdutos values('OI, eu sou um tecladinho bunitinho :D','digo, PERFECTUS','PERFEITINHOS PALHACTUOPLANCTUM JOTA Ã‰ PALHATROLITICO ',999)
