@@ -19,7 +19,7 @@ CREATE TABLE tblCliente
 	cep VARCHAR(15)
 )
 GO
-CREATE TABLE tblProdutosDaLoja
+CREATE TABLE tblProdutoDaLoja
 (
 	id_produto INT PRIMARY KEY IDENTITY(1,1),
 	nome VARCHAR(50),
@@ -31,10 +31,10 @@ CREATE TABLE tblProdutosDaLoja
 	preco DECIMAL(6,2),
 )
 GO
-CREATE TABLE tblPedidosProdutosDaLoja
+CREATE TABLE tblPedidoProdutoDaLoja
 (
 	id_cliente INT FOREIGN KEY REFERENCES tblCliente(id_cliente),
-	id_produto INT FOREIGN KEY REFERENCES tblProdutosDaLoja(id_produto),
+	id_produto INT FOREIGN KEY REFERENCES tblProdutoDaLoja(id_produto),
 	preco_total DECIMAL(6,2),
 	quantidade_pedida INT
 )
@@ -56,17 +56,30 @@ CREATE TABLE tblTecladoCustomizado
 	preco DECIMAL(6,2),
 )
 GO
-CREATE TABLE tblPedidosTecladoCustomizado
+CREATE TABLE tblPedidoTecladoCustomizado
 (
-	id_tecladoCustomizado INT FOREIGN KEY REFERENCES tblTecladoCustomizado(id_teclado_customizado),
+	id_teclado_customizado INT FOREIGN KEY REFERENCES tblTecladoCustomizado(id_teclado_customizado),
 	imagem VARBINARY(MAX),
 )
 
 SELECT * FROM tblCliente
-SELECT * FROM tblPedidosTecladoCustomizado
-SELECT * FROM tblProdutosDaLoja
+SELECT * FROM tblPedidoTecladoCustomizado
+SELECT * FROM tblProdutoDaLoja
 SELECT * FROM tblTecladoCustomizado
 SELECT * FROM tblColecao
+
+CREATE INDEX Xcliente ON tblCliente(id_cliente);
+GO
+CREATE INDEX Xproduto ON tblProdutoDaLoja(id_produto);
+GO
+CREATE INDEX Xpedidoloja ON tblPedidoProdutoDaLoja(id_cliente);
+GO
+CREATE INDEX Xcolecao ON tblColecao(id_colecao);
+GO
+CREATE INDEX Xtecladocustomizado ON tblTecladoCustomizado(id_teclado_customizado);
+GO
+CREATE INDEX Xpedidocustomizado ON tblPedidoTecladoCustomizado(id_teclado_customizado);
+
 
 
 -- Inserts:
