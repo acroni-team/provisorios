@@ -62,11 +62,11 @@ CREATE TABLE tblPedidoTecladoCustomizado
 	imagem VARBINARY(MAX),
 )
 
-SELECT * FROM tblCliente
-SELECT * FROM tblPedidoTecladoCustomizado
-SELECT * FROM tblProdutoDaLoja
-SELECT * FROM tblTecladoCustomizado
-SELECT * FROM tblColecao
+
+ALTER TABLE tblProdutoDaLoja ADD marca VARCHAR(30)
+ALTER TABLE tblProdutoDaLoja ALTER COLUMN descricao VARCHAR(1000)
+
+
 
 CREATE INDEX Xcliente ON tblCliente(id_cliente);
 GO
@@ -84,9 +84,20 @@ CREATE INDEX Xpedidocustomizado ON tblPedidoTecladoCustomizado(id_teclado_custom
 
 -- Inserts:
 -- Produtos
---insert into tblProdutos values('Rubens','ele é um RUBANCO bem LOCO','bem loco impolganti leite pao de batata',69.89)
---insert into tblProdutos values('FRUIT  DOLLY','Bebida de nectar',' DOLLY',56.30,1.98,3.56,5.97,69.89)
---insert into tblProdutos values('TETRAEDRO KRL','VOCE N SABE NEM EU','bem loco impolganti irineu',727)
---insert into tblProdutos values('OI MOUTA','Aquele que escreveu Mouta como nome na lista','bem leite eunsei kkj',420)
---insert into tblProdutos values('AGORA SIM','Famoso Rodrigao da Massa','fritas francesas JOBS Gabriel TORRES',50)
---insert into tblProdutos values('OI, eu sou um tecladinho bunitinho :D','digo, PERFECTUS','PERFEITINHOS PALHACTUOPLANCTUM JOTA É PALHATROLITICO ',999)
+insert into tblProdutoDaLoja values('BlackWidow X Chroma','A mesma performance de seu antecessor, 
+									o Blackwidow Chroma mas com switches expostos e uma construção em metal. É um teclado mecânico que vem com os 
+									switches da própria Razer e possui o sistema RGB de iluminação, oferecendo 16.8 milhões de cores (É luz que não acaba mais) 
+									e muitos, muitos modos diferentes de iluminação. Obviamente ele também vem com o famoso barulhinho da Razer.',1905,4.06,28.84,45.97,
+									1199.99,'Razer')
+
+--insert into tblProdutoDaLoja values('FRUIT  DOLLY','Bebida de nectar',' DOLLY',56.30,1.98,3.56,5.97,69.89)
+--insert into tblProdutoDaLoja values('TETRAEDRO KRL','VOCE N SABE NEM EU','bem loco impolganti irineu',727)
+--insert into tblProdutoDaLoja values('OI MOUTA','Aquele que escreveu Mouta como nome na lista','bem leite eunsei kkj',420)
+--insert into tblProdutoDaLoja values('AGORA SIM','Famoso Rodrigao da Massa','fritas francesas JOBS Gabriel TORRES',50)
+--insert into tblProdutoDaLoja values('OI, eu sou um tecladinho bunitinho :D','digo, PERFECTUS','PERFEITINHOS PALHACTUOPLANCTUM JOTA É PALHATROLITICO ',999)
+
+SELECT * FROM tblCliente
+SELECT * FROM tblPedidoTecladoCustomizado
+SELECT * FROM tblProdutoDaLoja
+SELECT * FROM tblTecladoCustomizado
+SELECT * FROM tblColecao
