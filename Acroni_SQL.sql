@@ -82,21 +82,30 @@ CREATE INDEX Xpedidocustomizado ON tblPedidoTecladoCustomizado(id_teclado_custom
 
 -- Inserts:
 -- Produtos
+insert into tblProdutoDaLoja values('Full-Size','Apenas um teclado full-size mecânico, simples e bonito, para usuário que desejam um teclado elegante que não te deixa na mão. Está versão vem switches Cherry Mx Blue',1.1, 3.4, 13.2, 44.5,
+									300.00,'Acroni')
+
+insert into tblProdutoDaLoja values('Tenkeyless','Com o mesmo design da sua versão maior "Full-Size", Tenkeyless é um teclado mecânico que não possui um number pad, sendo mais compacto e ideal pra usuários que desejam mais portabilidade ou tem uma mesa menor. Está versão vem switches Cherry Mx Red',0.9, 3.4, 13.2, 34.5,
+									230.00,'Acroni')
+
+insert into tblProdutoDaLoja values('Compact','Compact, um teclado estremamente portátil para aqueles que só desejam o essencial. Está versão vem switches Cherry Mx Brown',0.9, 3.4, 13.2, 24.5,
+									170.00,'Acroni')
+
 insert into tblProdutoDaLoja values('BlackWidow X Chroma','A mesma performance de seu antecessor, 
 									o Blackwidow Chroma mas com switches expostos e uma construção em metal. É um teclado mecânico que vem com os 
 									switches da própria Razer e possui o sistema RGB de iluminação, oferecendo 16.8 milhões de cores (É luz que não acaba mais) 
 									e muitos, muitos modos diferentes de iluminação. Obviamente ele também vem com o famoso barulhinho da Razer.',1.905,4.06,28.84,45.97,
 									1199.99,'Razer')
-INSERT INTO tblProdutoDaLoja VALUES ('Blackwidow X Tournament Chroma', 'Igualzinho ao Blackwidow X Chroma normal, Mecânico, RGB, vários modos de iluminação, 
+INSERT INTO tblProdutoDaLoja VALUES ('BlackWidow X Tournament Chroma', 'Igualzinho ao Blackwidow X Chroma normal, Mecânico, RGB, vários modos de iluminação, 
 									switches Razer e construção em metal, porém está versão é para aqueles que não se importam com a existência do teclado numérico
 									(tadinho dele, é bem útil até… as vezes) ou simplesmente querem um teclado mais compacto. 
 									E pra você que já tava ficando louco pra saber, ele tem o barulhinho da Razer sim.',
 									0.95,3,15.4,36.6,999.99, 'Razer')
-INSERT INTO tblProdutoDaLoja VALUES ('Blackwidow Chroma v2','Esse novo Blackwidow Chroma v2, veio, como o próprio nome já diz, para substituir o Blackwidow Chroma,
+INSERT INTO tblProdutoDaLoja VALUES ('BlackWidow Chroma v2','Esse novo Blackwidow Chroma v2, veio, como o próprio nome já diz, para substituir o Blackwidow Chroma,
 									 tem um design muito semelhante ao seu antecessor, mas dessa vez ele vem com um apoio de pulso ergonômico, uma variedade ainda 
 									 maior de modos de iluminação e com suporte ao novo Razer Synapse 3, e claro o switch e o barulhinho da Razer.',
 									 1.5, 3.9, 17.1,47.5,1199.99, 'Razer')
-INSERT INTO tblProdutoDaLoja VALUES ('Blackwidow Tournament Chroma V2','Essa belezinha tem o mesmo design do Blackwidow Chroma v2, porém essa é a vers"ao de torneio,
+INSERT INTO tblProdutoDaLoja VALUES ('BlackWidow Tournament Chroma V2','Essa belezinha tem o mesmo design do Blackwidow Chroma v2, porém essa é a vers"ao de torneio,
 									ou seja, não possui o teclado numérico, tornando-se mais portátil. Switches, suporte ao Razer Synapse e led´s também o acompanham.',
 									1.65, 3.9, 17.1, 47.5, 979.99, 'Razer')
 INSERT INTO tblProdutoDaLoja VALUES ('G413 Silver','Construído em alumínio escovado, com LED´s vermelhos, é mais silencioso devido ao seu switch Romer-G, que diz 
