@@ -16,19 +16,26 @@ CREATE TABLE tblCliente
 	email VARCHAR(50),
 	imagem_cliente VARBINARY(MAX),
 	cpf VARCHAR(15),
-	cep VARCHAR(15)
+	cep VARCHAR(15),
+	tipoConta char(1) default 'c',
+	-- p = premium, c = comum
+	quantidade_teclados int default 0
+
 )
+
 GO
 CREATE TABLE tblProdutoDaLoja
 (
 	id_produto INT PRIMARY KEY IDENTITY(1,1),
 	nome VARCHAR(50),
-	descricao VARCHAR(80),
+	descricao VARCHAR(1000),
 	peso DECIMAL(6,2),
 	altura DECIMAL(6,2),
 	largura DECIMAL(6,2),
 	comprimento DECIMAL(6,2),
 	preco DECIMAL(6,2),
+	marca VARCHAR(30),
+
 )
 GO
 CREATE TABLE tblPedidoProdutoDaLoja
@@ -62,11 +69,6 @@ CREATE TABLE tblPedidoTecladoCustomizado
 	id_teclado_customizado INT FOREIGN KEY REFERENCES tblTecladoCustomizado(id_teclado_customizado),
 	imagem VARBINARY(MAX),
 )
-
-
-ALTER TABLE tblProdutoDaLoja ADD marca VARCHAR(30)
-ALTER TABLE tblProdutoDaLoja ALTER COLUMN descricao VARCHAR(1000)
-
 
 
 CREATE INDEX Xcliente ON tblCliente(id_cliente);
@@ -133,7 +135,6 @@ INSERT INTO tblProdutoDaLoja VALUES ('Kumara 552', '',1.03,3.81,12.1,35.3,259.99
 INSERT INTO tblProdutoDaLoja VALUES ('Vara 551', '',1.29,4,16,46,229.99, 'Redragon')
 INSERT INTO tblProdutoDaLoja VALUES ('Varuna', '', 1.15,4,15,42, 264.99, 'Redragon')
 INSERT INTO tblProdutoDaLoja VALUES ('Yama','',1.9,5,29,52,389.99,'Redragon')
-
 
 SELECT * FROM tblCliente
 SELECT * FROM tblPedidoTecladoCustomizado
