@@ -52,6 +52,7 @@ CREATE TABLE tblTecladoCustomizado
 	id_teclado_customizado INT PRIMARY KEY IDENTITY(1,1),
 	id_colecao INT FOREIGN KEY REFERENCES tblColecao(id_colecao),
 	id_cliente INT FOREIGN KEY REFERENCES tblCliente(id_cliente),
+	imagem_teclado VARBINARY(MAX),
 	nickname VARCHAR(20),
 	preco DECIMAL(6,2),
 )
