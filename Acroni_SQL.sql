@@ -63,13 +63,6 @@ CREATE TABLE tblTecladoCustomizado
 	nickname VARCHAR(20),
 	preco DECIMAL(6,2),
 )
-GO
-CREATE TABLE tblPedidoTecladoCustomizado
-(
-	id_teclado_customizado INT FOREIGN KEY REFERENCES tblTecladoCustomizado(id_teclado_customizado),
-	imagem VARBINARY(MAX),
-)
-
 
 CREATE INDEX Xcliente ON tblCliente(id_cliente);
 GO
@@ -80,8 +73,7 @@ GO
 CREATE INDEX Xcolecao ON tblColecao(id_colecao);
 GO
 CREATE INDEX Xtecladocustomizado ON tblTecladoCustomizado(id_teclado_customizado);
-GO
-CREATE INDEX Xpedidocustomizado ON tblPedidoTecladoCustomizado(id_teclado_customizado);
+
 
 -- Inserts:
 -- Produtos
@@ -136,10 +128,12 @@ INSERT INTO tblProdutoDaLoja VALUES ('Vara 551', '',1.29,4,16,46,229.99, 'Redrag
 INSERT INTO tblProdutoDaLoja VALUES ('Varuna', '', 1.15,4,15,42, 264.99, 'Redragon')
 INSERT INTO tblProdutoDaLoja VALUES ('Yama','',1.9,5,29,52,389.99,'Redragon')
 
-SELECT * FROM tblCliente
-SELECT * FROM tblPedidoTecladoCustomizado
-SELECT * FROM tblProdutoDaLoja
-SELECT * FROM tblTecladoCustomizado
-SELECT * FROM tblColecao
+-- USUÁRIO PADRÃO
+
+insert into tblCliente(nome, usuario, senha) values ('teste','teste','teste')
 
 select * from tblCliente
+select * from tblColecao
+select * from tblPedidoProdutoDaLoja
+select * from tblProdutoDaLoja
+select * from tblTecladoCustomizado
