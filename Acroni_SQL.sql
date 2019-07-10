@@ -66,7 +66,8 @@ CREATE TABLE tblTecladoCustomizado
 GO
 CREATE TABLE tblVisita
 (
-	cont int	
+	cont INT IDENTITY(1,1),
+	data DATETIME	
 )
 GO
 
@@ -133,7 +134,7 @@ INSERT INTO tblProdutoDaLoja VALUES ('Kumara 552', '',1.03,3.81,12.1,35.3,259.99
 INSERT INTO tblProdutoDaLoja VALUES ('Vara 551', '',1.29,4,16,46,229.99, 'Redragon')
 INSERT INTO tblProdutoDaLoja VALUES ('Varuna', '', 1.15,4,15,42, 264.99, 'Redragon')
 INSERT INTO tblProdutoDaLoja VALUES ('Yama','',1.9,5,29,52,389.99,'Redragon')
-INSERT INTO tblVisita VALUES (0)
+INSERT INTO tblVisita VALUES (GETDATE())
 -- USUÁRIO PADRÃO
 
 insert into tblCliente(nome, usuario, senha) values ('teste','teste','teste')
